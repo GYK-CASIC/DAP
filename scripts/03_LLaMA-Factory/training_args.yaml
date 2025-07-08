@@ -1,0 +1,36 @@
+adapter_name_or_path: 
+output_dir: 
+dataset: 
+bf16: true
+cutoff_len: 2048
+dataset_dir: data
+ddp_timeout: 180000000
+do_train: true
+finetuning_type: lora
+flash_attn: auto
+gradient_accumulation_steps: 8
+include_num_input_tokens_seen: true
+learning_rate: 1.0e-06
+logging_steps: 5
+lora_alpha: 16
+lora_dropout: 0.05
+lora_rank: 8
+lora_target: all
+lr_scheduler_type: cosine
+max_grad_norm: 1.0
+max_samples: 100000
+model_name_or_path: /data01/zd/llama3-main/Meta-Llama-3_1-8B-Instruct
+num_train_epochs: 1.0
+optim: adamw_torch
+packing: false
+per_device_train_batch_size: 2
+plot_loss: true
+pref_beta: 0.1
+pref_ftx: 0
+pref_loss: sigmoid
+preprocessing_num_workers: 16
+report_to: none
+save_steps: 50
+stage: dpo
+template: llama3
+warmup_steps: 0
