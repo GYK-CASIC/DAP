@@ -1,0 +1,7 @@
+cache_dir: null
+lang: en
+last_model: LLaMA3.1-8B-Chat
+path_dict:
+  LLaMA3-70B: /data01/guoyikai/llama3-main/Meta-Llama-3-70B-Instruct
+  LLaMA3-8B-Chat: /data01/guoyikai/llama3-main/Meta-Llama-3_1-8B-Instruct
+  LLaMA3.1-8B-Chat: /data01/guoyikai/llama3-main/Meta-Llama-3_1-8B-Instruct

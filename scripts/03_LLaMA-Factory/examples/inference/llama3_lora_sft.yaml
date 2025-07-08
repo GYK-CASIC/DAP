@@ -1,0 +1,4 @@
+model_name_or_path: /data01/zd/llama3-main/Meta-Llama-3_1-8B-Instruct
+adapter_name_or_path: 
+template: llama3
+finetuning_type: lora
