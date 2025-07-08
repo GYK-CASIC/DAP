@@ -34,17 +34,17 @@ test.json
 python 01_train_original.py                       # trains on train_warmup.json
 ```
 
-### 3.2  Adversarial round *r* (repeat as needed)
+### 3.2  Adversarial round *t* (repeat as needed)
 1. **Generate paraphrased AI-generated text + Fine-grained Scoring**
    ```bash
    python scripts/00_generation_and_scoring.py
    ```
 2. **Fine‑tune detector** on original and selected paraphrases
    ```bash
-   python scripts/01_train_original.py            # original data
-   python scripts/02_train_paraphrase.py          # paraphrase data
+   python scripts/01_train_original.py            # original AI-generated text
+   python scripts/02_train_paraphrase.py          # paraphrased AI-generated text
    ```
-3. **Fine‑tune paraphraser** (LoRA)
+3. **DPO training for generator** (LoRA)
    ```bash
    cd scripts/03_LLaMA-Factory
    llamafactory-cli train training_args.yaml
@@ -58,9 +58,16 @@ python scripts/04_inference.py                    # reports AUROC / Accuracy (FP
 
 ---
 
-## 4  Citation
+## 4  Acknowledgments and Citations
+This project borrows or uses code from the following project, for which we are grateful:
+
+- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) - Implements Direct Preference Optimization (DPO).
+
+---
+
+## 5  Citation
 ```bibtex
-  @article    {dap2025,
+      @article{dap2025,
   title     = {DAP: Enhancing AI-Generated Text Detection via Dynamic Adversarial Paraphrasing},
   author    = {Guo et al.},
   year      = {2025}
@@ -68,9 +75,3 @@ python scripts/04_inference.py                    # reports AUROC / Accuracy (FP
 ```
 
 Licensed under the Apache 2.0 license.
-
-
-## Acknowledgments and Citations
-This project borrows or uses code from the following project, for which we are grateful:
-
-- [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) - Implements Direct Preference Optimization (DPO).
