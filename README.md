@@ -62,6 +62,8 @@ python scripts/04_inference.py                    # reports AUROC / Accuracy (FP
 This project borrows or uses code from the following project, for which we are grateful:
 
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) - Implements Direct Preference Optimization (DPO).
+- [Tweepfake](https://github.com/tizfa/tweepfake_deepfake_text_detection) - Used for constructing training and testing data.
+- [ROCStories](http://cs.rochester.edu/nlp/rocstories) - Used for constructing training and testing data.
 
 ---
 
