@@ -15,8 +15,8 @@ pip install -r requirements.txt     # install all dependencies (tested with Pyth
 ## 2  Datasets
 Our datasets are in the following directories:
 ```
-./dataset/tweepfake   # TweepFake
-./dataset/roc         # ROCStories
+dataset/tweepfake   # TweepFake
+dataset/roc         # ROCStories
 ```
 Each folder should contain:
 ```
@@ -67,7 +67,7 @@ This project borrows or uses code from the following project, for which we are g
 
 ## 5  Citation
 ```bibtex
-      @article{dap2025,
+  @article    {dap2025,
   title     = {DAP: Enhancing AI-Generated Text Detection via Dynamic Adversarial Paraphrasing},
   author    = {Guo et al.},
   year      = {2025}
