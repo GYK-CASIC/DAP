@@ -12,15 +12,15 @@ from datetime import datetime
 from tqdm import tqdm
 
 # ==== Hyperparameter Settings ==== 
-ROUND = 
-DATA_START = 
-DATA_END = 
-CHECKPOINT_PATH = ''
+ROUND =                    # Adversarial round
+DATA_START =               # Data_start_point
+DATA_END =                 # Data_end_point
+CHECKPOINT_PATH =          # Checkpoint_path
+PRETRAINED_MODEL_PATH =    # Pretrained_model_path
 
 DATA_RANGE = f'{DATA_START}_{DATA_END}'
 TRAIN_FILE = f'./data_procedure/{ROUND}round/rl_{ROUND}round_{DATA_START}_{DATA_END}_finetune.json'
 OUTPUT_DIR = './output/finetune' 
-PRETRAINED_MODEL_PATH = '' 
 SEED = 42 
 BATCH_SIZE_TRAIN = 8 
 BATCH_SIZE_VALID = 16 
