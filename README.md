@@ -1,5 +1,5 @@
 # DAP
-Official resources of "DAP: Enhancing AI-generated Text Detection via Dynamic Adversarial Paraphrasing"
+Code of "DAP: Enhancing AI-generated Text Detection via Dynamic Adversarial Paraphrasing"
 
 > **DAP** is a co‑evolving framework that alternately improves a *detector* and a *generator* so that the detector becomes robust against dynamically generated adversarial paraphrasings.
 
