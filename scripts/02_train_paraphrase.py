@@ -12,10 +12,12 @@ from datetime import datetime
 from tqdm import tqdm
 
 # Global hyperparameter settings
-ROUND = 
-DATA_START = 
-DATA_END = 
-CHECKPOINT_PATH = '' 
+ROUND =                    # Adversarial round
+DATA_START =               # Data_start_point
+DATA_END =                 # Data_end_point
+CHECKPOINT_PATH =          # Checkpoint_path
+PRETRAINED_MODEL_PATH =    # Pretrained_model_path
+
 
 DATA_RANGE = f'{DATA_START}_{DATA_END}'
 TRAIN_DATA_PATH = f'./data_procedure/{ROUND}round/rl_{ROUND}round_{DATA_START}_{DATA_END}_rl.json'
@@ -24,7 +26,6 @@ BATCH_SIZE_TRAIN = 8
 BATCH_SIZE_VALID = 16
 LEARNING_RATE = 1e-5
 NUM_EPOCHS = 2
-PRETRAINED_MODEL_PATH = ''
 
 
 # Set random seed for reproducibility across libraries
