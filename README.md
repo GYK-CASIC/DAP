@@ -71,7 +71,6 @@ This project borrows or uses code from the following project, for which we are g
 ```bibtex
   @article    {dap2025,
   title     = {DAP: Enhancing AI-Generated Text Detection via Dynamic Adversarial Paraphrasing},
-  author    = {Guo et al.},
   year      = {2025}
 }
 ```
