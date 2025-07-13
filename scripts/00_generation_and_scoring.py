@@ -23,7 +23,7 @@ config = {
     "TOP_P": 0.95,                                                # Nucleus-sampling probability (top-p)
     "TOP_K": 100,                                                 # Top-k sampling size
     "NUM_RETURN_SEQUENCES": 100,                                  # Number of sequences to generate per prompt
-    "INPUT_FILE": "../dataset/tweepfake/train_rl.json",           # Path to train_rl.json
+    "INPUT_FILE": "../dataset/tweepfake/train/train_rl.json",     # Path to train_rl.json
     "OUTPUT_FILE_TEMPLATE": "../dataset/tweepfake/inter.json",    # Template path for saving intermediate data
     "BATCH_SIZE": 32,                                             # Generation batch size
     "MAX_LENGTH": 512,                                            # Maximum total sequence length
