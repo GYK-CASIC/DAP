@@ -12,9 +12,9 @@ from datetime import datetime
 # Configuration
 class Config:
     """Configuration class for model inference"""
-    model_path = ''  # Path to the saved model
-    test_file_path = ''  # Path to the test dataset
-    tokenizer_path = ''  # Path to the tokenizer
+    model_path = ''        # Path to the saved model
+    test_file_path = ''    # Path to the test dataset
+    tokenizer_path = ''    # Path to the tokenizer
     batch_size = 32
     max_length = 512
     output_dir = "./output/inference"
